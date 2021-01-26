@@ -1,180 +1,316 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>梦想驿站 - 个人梦想寄托的地方</title><meta name="author" content="戴昌益"><meta name="copyright" content="戴昌益"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="信心点燃希望，拼搏创建辉煌。一个人，若没有了梦想，就没有了为之奋斗的目标，没有了前进的动力。那就像生活在峡谷底层一般，在黑暗中度过，在无奈之中苦恼，在绝望之中挣扎。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="梦想驿站">
-<meta property="og:url" content="https://dailaoda45.github.io/index.html">
-<meta property="og:site_name" content="梦想驿站">
-<meta property="og:description" content="信心点燃希望，拼搏创建辉煌。一个人，若没有了梦想，就没有了为之奋斗的目标，没有了前进的动力。那就像生活在峡谷底层一般，在黑暗中度过，在无奈之中苦恼，在绝望之中挣扎。">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://dailaoda45.github.io/img/avatar.jpg">
-<meta property="article:author" content="戴昌益">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://dailaoda45.github.io/img/avatar.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://dailaoda45.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  date_suffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: {"limitCount":50,"languages":{"author":"作者: 戴昌益","link":"链接: ","source":"来源: 梦想驿站","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  source: {
-    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
-    },
-    fancybox: {
-      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
-    }
-  },
-  isPhotoFigcaption: true,
-  islazyload: false,
-  isanchor: false
-};
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jQuery.blockUI.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+<script language="javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="js/myJs.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<link rel="stylesheet" type="text/css" href="css/public.css">
+</head>
 
-var saveToLocal = {
-  set: function setWithExpiry(key, value, ttl) {
-    const now = new Date()
-    const expiryDay = ttl * 86400000
-    const item = {
-      value: value,
-      expiry: now.getTime() + expiryDay,
-    }
-    localStorage.setItem(key, JSON.stringify(item))
-  },
+<body>
+<div class="header" >
+<div class="logo">
+<img src="images/logo2.png">
+</div>
 
-  get: function getWithExpiry(key) {
-    const itemStr = localStorage.getItem(key)
+<div class="menu">
+<ul>
+<li><span><a href="#">首页</a></span></li>
+<li class="menu_down"><span class="xuanzhon"><a href="#">中流产品</a></span>
+</li>
+<li><span><a href="#">视频讲解</a></span></li>
+<li><span><a href="#">新闻资讯</a></span></li>
+<li><span><a href="#">企业招商</a></span></li>
+<li><span><a href="#">联系我们</a></span></li>
+<li><span><a href="#">交流空间</a></span></li>
+</ul>
+</div>
+<div class="zhucje">
+<ul>
+<li><a href="#">注册</a></li>
+<li><a href="#">登录</a></li>
+</ul>
+</div>
+<div class="rjbz">
+<h2>软件帮助</h2>
+</div>
 
-    if (!itemStr) {
-      return undefined
-    }
-    const item = JSON.parse(itemStr)
-    const now = new Date()
+<div class="clear"></div>
+</div>
 
-    if (now.getTime() > item.expiry) {
-      localStorage.removeItem(key)
-      return undefined
-    }
-    return item.value
-  }
-}
+<div class="banner01" id="one">
+<img src="images/官网首页大海报（竖）.jpg">
 
-// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
-const getScript = url => new Promise((resolve, reject) => {
-  const script = document.createElement('script')
-  script.src = url
-  script.async = true
-  script.onerror = reject
-  script.onload = script.onreadystatechange = function() {
-    const loadState = this.readyState
-    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-    script.onload = script.onreadystatechange = null
-    resolve()
-  }
-  document.head.appendChild(script)
-})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2021-01-26 15:16:07'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
+<div class="gywm-bg">
+<div class="gywm wapper">
+<div class="gywm01">
+<h2>关于我们</h2>
+<p>about us</p>
+<span>湖南中流空间科技有限公司，<br>坐落于湖南省长落于湖南省长沙是高兴技术落于湖南省长沙是高兴技术落于湖南省长沙是高兴技术落于湖南省长沙是高兴技术沙是高兴技术反发起</span>
+<strong>了解更多<em>Reod mone</em></strong>
+<div class="clear"></div>
+</div>
+<div  class="lzcp">
+<ul>
+<li><img src="images/了解产品图标.png"><div class="ljcp"><span>了解产品</span><strong>Understand the product</strong></div><div class="clear"></div></li>
+<li><img src="images/xaizai.png"><div class="ljcp"><span>了解产品</span><strong>Understand the product</strong></div><div class="clear"></div></li>
+<li><img src="images/hqrj.png"><div class="ljcp"><span>了解产品</span><strong>Understand the product</strong></div><div class="clear"></div></li>
+</ul>
+<div class="clear"></div>
+</div>
 
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(function () {  window.activateDarkMode = function () {
-    document.documentElement.setAttribute('data-theme', 'dark')
-    if (document.querySelector('meta[name="theme-color"]') !== null) {
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-    }
-  }
-  window.activateLightMode = function () {
-    document.documentElement.setAttribute('data-theme', 'light')
-   if (document.querySelector('meta[name="theme-color"]') !== null) {
-      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-    }
-  }
-  const autoChangeMode = 'false'
-  const t = saveToLocal.get('theme')
-  if (autoChangeMode === '1') {
-    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-    if (t === undefined) {
-      if (isLightMode) activateLightMode()
-      else if (isDarkMode) activateDarkMode()
-      else if (isNotSpecified || hasNoSupport) {
-        const now = new Date()
-        const hour = now.getHours()
-        const isNight = hour <= 6 || hour >= 18
-        isNight ? activateDarkMode() : activateLightMode()
-      }
-      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-        if (saveToLocal.get('theme') === undefined) {
-          e.matches ? activateDarkMode() : activateLightMode()
+
+
+</div>
+
+</div>
+
+
+</div>
+
+<div class="yycx-bg">
+<div class="yycx wapper">
+<h2>应用程序列表</h2>
+<span>您的系统符合软件安装要求</span>
+<style type="text/css">
+table { margin:0 auto; width:1300px;}
+table tr td{ color:#fff; font-size:16px; padding:15px; font-weight:600;}
+.ruanj{ width:55px}
+.ruanj02{ width:82px}
+.ruanj01{ width:825px}
+.ruanj03{ width:102px}
+.ruanj04{ width:206px}
+.xiazai{ height:40px; width:60px; line-height:40px; text-align:center; background:#3175b4; color:#fff; font-size:14px; border-radius:5px;}
+.xiazai a{ color:#fff;}
+</style>
+<table width="100%" border="1" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="ruanj">软件名称</td>
+    <td class="ruanj01">软件描述</td>
+    <td class="ruanj03">软件大小</td>
+    <td class="ruanj04">更新时间</td>
+    <td class="ruanj02">操作</td>
+  </tr>
+  <tr>
+    <td>环境修复包</td>
+    <td>恢复win7系统下载软件运行错误</td>
+    <td>74.4MB</td>
+    <td>2019-08-16 15:54:24</td>
+    <td><div class="xiazai"><a href="#">下载</a></div></td>
+  </tr>
+  <tr>
+    <td>环境修复包环境修复包修复包</td>
+    <td>恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误</td>
+    <td>74.4MB</td>
+    <td>2019-08-16 15:54:24</td>
+    <td><div class="xiazai"><a href="#">下载</a></div></td>
+  </tr>
+  <tr>
+    <td>环境修复包环境修复包修复包</td>
+    <td>恢复win7系统下载软件运行恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误错误</td>
+    <td>74.4MB</td>
+    <td>2019-08-16 15:54:24</td>
+    <td><div class="xiazai"><a href="#">下载</a></div></td>
+  </tr>
+  <tr>
+    <td>环境修复包环境修复包修复包</td>
+    <td>恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误</td>
+    <td>74.4MB</td>
+    <td>2019-08-16 15:54:24</td>
+    <td><div class="xiazai"><a href="#">下载</a></div></td>
+  </tr>
+  <tr>
+    <td>环境修复包环境修复包修复包</td>
+    <td>恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误</td>
+    <td>74.4MB</td>
+    <td>2019-08-16 15:54:24</td>
+    <td><div class="xiazai"><a href="#">下载</a></div></td>
+  </tr>
+  <tr>
+    <td>环境修复包环境修复包修复包</td>
+    <td>恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误恢复win7系统下载软件运行错误</td>
+    <td>74.4MB</td>
+    <td>2019-08-16 15:54:24</td>
+    <td><div class="xiazai"><a href="#">下载</a></div></td>
+  </tr>
+</table>
+
+
+
+
+</div>
+</div>
+
+
+<div class="spjj-bg">
+<div class="spjj wapper">
+<div class="biaoti"><img src="images/spjj.png"></div>
+<em>更多视频...</em>
+<ul>
+<li><video width="100%" height="auto" controls poster="images/shiping.png">
+    <source src="movie.mp4" type="video/mp4">
+</video><span>中流房地一体资料管理系统</span></li>
+<li><video width="100%" height="auto" controls poster="images/shiping.png">
+    <source src="movie.mp4" type="video/mp4">
+</video><span>中流房地一体资料管理系统</span></li>
+<li><video width="100%" height="auto" controls poster="images/shiping.png">
+    <source src="movie.mp4" type="video/mp4">
+</video><span>中流房地一体资料管理系统</span></li>
+
+</ul>
+
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="wmtg-bg">
+<div class="wntg wapper4">
+<h2>我们会提供最顶级的服务</h2>
+<p></p>
+<em>We will provide the best service</em>
+
+<div class="qqzc">
+<ul>
+<li><img src="images/QQ3.png"><div class="zhci"><span>QQ支持</span><strong>有任何问题可以随时解答</strong></div><div class="clear"></div></li>
+<li style=" margin-left:62px"><img src="images/dh.png"><div class="zhci"><span>QQ支持</span><strong>有任何问题可以随时解答</strong></div><div class="clear"></div></li>
+<li style=" padding-left:18px"><img src="images/pp1.png"><div class="zhci" style=" border-right:none"><span>QQ支持</span><strong>有任何问题可以随时解答</strong></div><div class="clear"></div></li>
+</ul>
+
+<div class="clear"></div>
+</div>
+
+
+
+</div>
+</div>
+
+<div class="cxz wapper3">
+<div class="shouji">
+<img src="images/djourji.png">
+</div>
+
+<ul>
+<li><h2>128k</h2><img src="images/ai.png"><span><a href="#">下载</a></span></li>
+<li><h2>3280</h2><img src="images/ai.png"><span><a href="#">好评</a></span></li>
+
+<li><h2>25k</h2><img src="images/dianzain.png"><span><a href="#">用户点赞</a></span></li>
+
+
+</ul>
+
+
+
+</div>
+
+
+<div class="fhdb">
+<span><a  href="#one">返回顶部</a></span>
+</div>
+<div class="foot-bg">
+<div class="foot wapper3">
+<h2>让我们一起合作 联系方式</h2>
+<ul>
+<li><img src="images/dainh.png"><div class="lxdh"><span>联系电话</span><strong>0731-89782885</strong></div><div class="clear"></div></li><li><img src="images/youjian.png"><div class="lxdh"><span>联系电话</span><strong>0731-89782885</strong></div><div class="clear"></div></li>
+<li><img src="images/baiozhi.png"><div class="lxdh"><span>公司地址</span><strong>公司地址公司地址公司地址公司地址</strong></div><div class="clear"></div></li>
+<div class="clear"></div>
+</ul>
+<div class="clear"></div><div class="banean">
+<strong>@2016-2020 湖南中流空间科技有限公司 版权所有 湘ICP备190177710号-1</strong>
+</div>
+
+
+</div>
+<div class="saoyiso">
+<h2>扫一扫</h2>
+<img src="images/erm.png">
+<span>关注官方微信公众号</span>
+</div>
+</div>
+<script>
+	    var minHeight = $(".header").height();
+    $(window).scroll(function ()
+    {
+        var s = $(window).scrollTop();
+        if (s > minHeight)
+        {
+            $(".header").css({  background:"url(images/18.jpg) center no-repeat", backgroundSize:"100% 100%"});
+		
+        } else
+        {
+            
+			$(".header").css({background:"none"});
         }
-      })
-    } else if (t === 'light') activateLightMode()
-    else activateDarkMode()
-  } else if (autoChangeMode === '2') {
-    const now = new Date()
-    const hour = now.getHours()
-    const isNight = hour <= 6 || hour >= 18
-    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-    else if (t === 'light') activateLightMode()
-    else activateDarkMode()
-  } else {
-    if (t === 'dark') activateDarkMode()
-    else if (t === 'light') activateLightMode()
-  }const asideStatus = saveToLocal.get('aside-status')
-if (asideStatus !== undefined) {
-   if (asideStatus === 'hide') {
-     document.documentElement.classList.add('hide-aside')
-   } else {
-     document.documentElement.classList.remove('hide-aside')
-   }
-}})()</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="梦想驿站" type="application/atom+xml">
-</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 个人兴趣</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-sticky-note"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/home-background.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">梦想驿站</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 个人兴趣</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-sticky-note"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">梦想驿站</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/dailaoda45" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:daichangyi940713@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/01/25/%E7%A9%BA%E7%99%BD%E6%A8%A1%E6%9D%BF%E6%A0%B7%E4%BE%8B%20-%20%E5%89%AF%E6%9C%AC/" title="空白模板样例">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="空白模板样例"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/25/%E7%A9%BA%E7%99%BD%E6%A8%A1%E6%9D%BF%E6%A0%B7%E4%BE%8B%20-%20%E5%89%AF%E6%9C%AC/" title="空白模板样例">空白模板样例</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-01-25T11:49:21.000Z" title="发表于 2021-01-25 19:49:21">2021-01-25</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-26T02:43:01.059Z" title="更新于 2021-01-26 10:43:01">2021-01-26</time></span></div><div class="content">##纸上得来终觉浅
-纸上得来终觉浅绝知此事要躬行
-</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/01/25/%E7%A9%BA%E7%99%BD%E6%A8%A1%E6%9D%BF%E6%A0%B7%E4%BE%8B/" title="空白模板样例">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="空白模板样例"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/25/%E7%A9%BA%E7%99%BD%E6%A8%A1%E6%9D%BF%E6%A0%B7%E4%BE%8B/" title="空白模板样例">空白模板样例</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-01-25T11:49:21.000Z" title="发表于 2021-01-25 19:49:21">2021-01-25</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-25T11:57:26.912Z" title="更新于 2021-01-25 19:57:26">2021-01-25</time></span></div><div class="content">测试测试测试测试
-</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/01/24/%E4%B8%80%E5%88%87%E7%9A%84%E5%BC%80%E5%A7%8B/" title="一切的开始">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一切的开始"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/24/%E4%B8%80%E5%88%87%E7%9A%84%E5%BC%80%E5%A7%8B/" title="一切的开始">一切的开始</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-01-24T08:55:32.223Z" title="发表于 2021-01-24 16:55:32">2021-01-24</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-24T10:00:43.875Z" title="更新于 2021-01-24 18:00:43">2021-01-24</time></span></div><div class="content">终于成功了。首先我要感叹一下，终于成功了。按照着网上的视频文档，按部就班的进行操作。期间遇到过很多问题，网络问题、node.js安装问题、Git安装问题。由于我原来没有接触过相关的东西，我还需要学习github的基础使用方法。最后，我总算把网站部署到了github上去了。但是仍然没有成功，于是我就重新来过。并且我到处进行搜索问题所在我猜会不会是浏览器的问题呢？我就换了一个浏览器。我猜会不会是github设置的问题呢？我就又去把github了设置进行了调整。仍然没有解决到我的问题。最后我终于发现我在那个地址中的应该是github，我打成了guthub就是因为这一个字母之差让我多花了半天时间。这让我很生气,我生气自己怎么不仔细看一下。怎么不去仔细进行拼音写？总的说来，现在也已经成功了。给我带来的是满满的喜悦之情。这也不枉费我反复操作了好几遍。 
+})
+</script>
 
-历程说起来我为什么要做这个事情呢？要部署自己的博客呢？这缘由。我在工作中所需要做到的一件事情。我当时需要制作一个我们专业领域软件的“功能模块树形图”(我专业是做测量软件技术支持人员专门教人家软件使用的想着做个树形图教学的时候会方便一点)。我就问我 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/01/24/hello-world/" title="Hello World">     <img class="post_bg" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/01/24/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-01-24T07:46:05.275Z" title="发表于 2021-01-24 15:46:05">2021-01-24</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-01-24T07:46:05.275Z" title="更新于 2021-01-24 15:46:05">2021-01-24</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server$ hexo server
-More info: Server
-Generate static files$ hexo generate
-More info: Generating
-Deploy to remote sites$ hexo deploy
-More info: Deployment
-</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">戴昌益</div><div class="author-info__description">信心点燃希望，拼搏创建辉煌。一个人，若没有了梦想，就没有了为之奋斗的目标，没有了前进的动力。那就像生活在峡谷底层一般，在黑暗中度过，在无奈之中苦恼，在绝望之中挣扎。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/dailaoda45"><i class="fab fa-github"></i><span>github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/dailaoda45" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:daichangyi940713@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/01/25/%E7%A9%BA%E7%99%BD%E6%A8%A1%E6%9D%BF%E6%A0%B7%E4%BE%8B%20-%20%E5%89%AF%E6%9C%AC/" title="空白模板样例"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="空白模板样例"/></a><div class="content"><a class="title" href="/2021/01/25/%E7%A9%BA%E7%99%BD%E6%A8%A1%E6%9D%BF%E6%A0%B7%E4%BE%8B%20-%20%E5%89%AF%E6%9C%AC/" title="空白模板样例">空白模板样例</a><time datetime="2021-01-25T11:49:21.000Z" title="发表于 2021-01-25 19:49:21">2021-01-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/25/%E7%A9%BA%E7%99%BD%E6%A8%A1%E6%9D%BF%E6%A0%B7%E4%BE%8B/" title="空白模板样例"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="空白模板样例"/></a><div class="content"><a class="title" href="/2021/01/25/%E7%A9%BA%E7%99%BD%E6%A8%A1%E6%9D%BF%E6%A0%B7%E4%BE%8B/" title="空白模板样例">空白模板样例</a><time datetime="2021-01-25T11:49:21.000Z" title="发表于 2021-01-25 19:49:21">2021-01-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/24/%E4%B8%80%E5%88%87%E7%9A%84%E5%BC%80%E5%A7%8B/" title="一切的开始"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一切的开始"/></a><div class="content"><a class="title" href="/2021/01/24/%E4%B8%80%E5%88%87%E7%9A%84%E5%BC%80%E5%A7%8B/" title="一切的开始">一切的开始</a><time datetime="2021-01-24T08:55:32.223Z" title="发表于 2021-01-24 16:55:32">2021-01-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/24/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2021/01/24/hello-world/" title="Hello World">Hello World</a><time datetime="2021-01-24T07:46:05.275Z" title="发表于 2021-01-24 15:46:05">2021-01-24</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/01/"><span class="card-archive-list-date">一月 2021</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">4</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-01-26T07:16:07.122Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 戴昌益</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
+<div class="youce">
+   <ul class="right_nav">
+      <li>
+         <div class="iconBox oln_ser"> 
+            <img src='images/rnqq.png'>
+            <h4>在线客服</h4>
+         </div>
+         <div class="hideBox">
+            <div class="hb">
+               <h5>在线咨询</h5>
+               <div class="qqtalk">
+                  <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=（你的QQ号码）&site=qq&menu=yes">
+                     <span><img src="images/online.png" alt="点击发消息"
+                           title="点击发消息" /></span>
+                     <p>点击发消息</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </li>
+      <li>
+         <div class="iconBox phe_num">
+            <img src='images/rncall.png'>
+            <h4>联系电话</h4>
+         </div>
+         <div class="hideBox">
+            <div class="hb">
+               <h5>热线电话</h5>
+               <p>18866886688</p>
+            </div>
+         </div>
+      </li>
+      <li>
+         <div class="iconBox">
+            <img src="images/weixin.png">
+            <h4>添加微信</h4>
+         </div>
+         <div class="hideBox">
+            <div class="hb">
+               <h5>添加微信</h5>
+               <img src='images/ewm.jpg'>
+            </div>
+         </div>
+      </li>
+      <!--<li>
+         <div class="iconBox to_msg">
+            <img src='images/rnmsg.png'>
+            <h4>在线留言</h4>
+         </div>
+      </li>-->
+      <li>
+         <div class="iconBox top">
+            <img src='images/rntop.png'>
+            <h4>回到顶部</h4>
+         </div>
+      </li>
+   </ul>
+
+   <script type="text/javascript" src='js/rightask.js'></script>
+
+</div>
+
+</body>
+</html>
