@@ -6,7 +6,7 @@
   <link href="https://dailaoda45.github.io/atom.xml" rel="self"/>
   
   <link href="https://dailaoda45.github.io/"/>
-  <updated>2021-01-29T12:04:33.721Z</updated>
+  <updated>2021-02-20T08:38:44.447Z</updated>
   <id>https://dailaoda45.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://dailaoda45.github.io/2021/02/20/HTML%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://dailaoda45.github.io/2021/02/20/HTML%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2021-02-20T08:38:39.196Z</published>
+    <updated>2021-02-20T08:38:44.447Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HTML复习笔记"><a href="#HTML复习笔记" class="headerlink" title="HTML复习笔记"></a>HTML复习笔记</h1><p>时间过的真快，记忆也丢的真快。我已经忘记了前面学习的东西，知识越来越模糊，操作越来越生疏。放假前学的HTML的基础知识都忘记了，如果学习了一些知识如果不使用这些知识就会慢慢从脑海中消失。这段时间有空，赶紧起来复习一下。HTML基础知识。</p><hr><h2 id="HTML基础教程"><a href="#HTML基础教程" class="headerlink" title="HTML基础教程"></a>HTML基础教程</h2><h3 id="HTML基础结构"><a href="#HTML基础结构" class="headerlink" title="HTML基础结构"></a>HTML基础结构</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">HTML</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>我的第一个标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>我的第一个段落。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line">代码解释:</span><br><span class="line"></span><br><span class="line">- <span class="meta">&lt;!DOCTYPE&gt;</span> 声明不是 HTML 标签；它是指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令。</span><br><span class="line"></span><br><span class="line">- <span class="tag">&lt;<span class="name">html</span>&gt;</span> 与 <span class="tag">&lt;/<span class="name">html</span>&gt;</span> 之间的文本描述网页</span><br><span class="line"></span><br><span class="line">- <span class="tag">&lt;<span class="name">body</span>&gt;</span> 与 <span class="tag">&lt;/<span class="name">body</span>&gt;</span> 之间的文本是可见的页面内容</span><br><span class="line"></span><br><span class="line">- <span class="tag">&lt;<span class="name">h1</span>&gt;</span> 与 <span class="tag">&lt;/<span class="name">h1</span>&gt;</span> 之间的文本被显示为标题</span><br><span class="line"></span><br><span class="line">- <span class="tag">&lt;<span class="name">p</span>&gt;</span> 与 <span class="tag">&lt;/<span class="name">p</span>&gt;</span> 之间的文本被显示为段落</span><br><span class="line"></span><br></pre></td></tr></table></figure><hr><h3 id="HTML常用标签-元素"><a href="#HTML常用标签-元素" class="headerlink" title="HTML常用标签/元素"></a>HTML常用标签/元素</h3><table><thead><tr><th align="center">标签</th><th align="left">描述</th><th>样例</th></tr></thead><tbody><tr><td align="center">&lt;title&gt;……&lt;/title&gt;</td><td align="left">整个网页的标题</td><td></td></tr><tr><td align="center">&lt;h1&gt;……&lt;/h1&gt;</td><td align="left">文本标题</td><td></td></tr><tr><td align="center">&lt;p&gt;……&lt;/p&gt;</td><td align="left">段落标签</td><td></td></tr><tr><td align="center">&lt;a&gt;……&lt;/a&gt;</td><td align="left">HTML链接</td><td>&lt;a href=”<a href="http://www.w3school.com&quot;&gt;this/">http://www.w3school.com&quot;&gt;This</a> is a link&lt;/a&gt;</td></tr><tr><td align="center">&lt;img&gt;</td><td align="left">HTML 图像</td><td>&lt;img src=”w3school.jpg” width=”104” height=”142” /&gt;</td></tr><tr><td align="center">&lt;br /&gt;</td><td align="left">空标签（换行）</td><td></td></tr><tr><td align="center">&lt;html&gt;……&lt;/html&gt;</td><td align="left">定义HTML文档</td><td></td></tr><tr><td align="center">&lt;body&gt;……&lt;/body&gt;</td><td align="left">定义文档主体</td><td></td></tr><tr><td align="center">&lt;hr /&gt;</td><td align="left">定义水平线</td><td></td></tr><tr><td align="center">&lt;!—-&gt;</td><td align="left">HTML注释</td><td></td></tr><tr><td align="center">&lt;u&gt;……&lt;/u&gt;</td><td align="left">下划线文本</td><td></td></tr><tr><td align="center">&lt;table&gt;……&lt;/table&gt;</td><td align="left">表格</td><td></td></tr><tr><td align="center">&lt;tr&gt;……&lt;/tr&gt;</td><td align="left">表格行</td><td></td></tr><tr><td align="center">&lt;td&gt;……&lt;/td&gt;</td><td align="left">表格列</td><td></td></tr><tr><td align="center">&lt;th&gt;……&lt;/th&gt;</td><td align="left">表格表头</td><td></td></tr><tr><td align="center">&lt;thead&gt;……&lt;/thead&gt;</td><td align="left">定义表格的页眉</td><td></td></tr><tr><td align="center">&lt;tbody&gt;……&lt;/tbody&gt;</td><td align="left">定义表格的主体</td><td></td></tr><tr><td align="center">&lt;tfoot&gt;……&lt;/tfoot&gt;</td><td align="left">定义表格的页脚</td><td></td></tr><tr><td align="center">&lt;ul&gt;……&lt;/ul&gt;</td><td align="left">定义无序列表</td><td></td></tr><tr><td align="center">&lt;li&gt;……&lt;/li&gt;</td><td align="left">定义列表项</td><td></td></tr><tr><td align="center">&lt;ol&gt;……&lt;/ol&gt;</td><td align="left">定义有序列表</td><td></td></tr><tr><td align="center">&lt;dl&gt;……&lt;/dl&gt;</td><td align="left">定义自定义列表</td><td></td></tr><tr><td align="center">&lt;dt&gt;……&lt;/dt&gt;</td><td align="left">定义自定义列表项</td><td></td></tr><tr><td align="center">&lt;dd&gt;……&lt;/dd&gt;</td><td align="left">定义定义的描述</td><td></td></tr><tr><td align="center">&lt;div&gt;……&lt;/div&gt;</td><td align="left">定义文档中的分区或节</td><td></td></tr><tr><td align="center">&lt;span&gt;……&lt;/span&gt;</td><td align="left">定义 span，用来组合文档中的行内元素</td><td></td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;HTML复习笔记&quot;&gt;&lt;a href=&quot;#HTML复习笔记&quot; class=&quot;headerlink&quot; title=&quot;HTML复习笔记&quot;&gt;&lt;/a&gt;HTML复习笔记&lt;/h1&gt;&lt;p&gt;时间过的真快，记忆也丢的真快。我已经忘记了前面学习的东西，知识越来越模糊，操作越来越生疏。放</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Markdown学习笔记</title>
